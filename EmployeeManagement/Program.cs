@@ -36,6 +36,20 @@
                         Console.WriteLine(employee);
                     }
                 }
+                if (choice == "3")
+                {
+                    Console.Write("Enter employee name to search: ");
+                    string searchName = Console.ReadLine();
+
+                    if (employees.Contains(searchName))
+                    {
+                        Console.WriteLine("Employee found: " + searchName);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Employee not found.");
+                    }
+                }
 
                 if (choice == "5")
                 {
