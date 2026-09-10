@@ -50,7 +50,21 @@
                         Console.WriteLine("Employee not found.");
                     }
                 }
+                if (choice == "4")
+                {
+                    Console.Write("Enter employee name to remove: ");
+                    string removeName = Console.ReadLine();
 
+                    if (employees.Contains(removeName))
+                    {
+                        employees.Remove(removeName);
+                        Console.WriteLine("Employee removed: " + removeName);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Employee not found.");
+                    }
+                }
                 if (choice == "5")
                 {
                     running = false;
